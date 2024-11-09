@@ -132,7 +132,7 @@ export function AdminDashboard() {
         const employeeId = payload?.id;
 
         if (employeeId) {
-          fetch(`${API_URL}/api/v1/employees/`, {
+          fetch(`https://liwan-back.vercel.app/api/v1/employees/`, {
             headers: {
               Authorization: `Bearer ${accessToken}`,
             },
